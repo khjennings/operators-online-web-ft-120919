@@ -1,16 +1,16 @@
-def unsafe?(speed= 60)
+def unsafe?(speed=60)
 if speed > 60 
-  "unsafe"
+  "true"
 elseif speed < 30
-  "unsafe"
+  "true"
 else speed < 60
-  "safe"
+  "false"
 end
 
 
 
-def not_safe?(speed)
-	
+def not_safe?(speed=60)
+	speed > 60 ? "safe" : "false"
 end
 	
 
